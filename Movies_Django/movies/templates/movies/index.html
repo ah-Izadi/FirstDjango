@@ -1,0 +1,14 @@
+{% for Movie in movies %}
+    <div class="row">
+        <a href="{{Movie.id}}">  {{ Movie.name}}</a>
+    </div>
+{% endfor %}
+
+{% comment %} {% for gener in geners %}
+    <div class='row'>
+        gener: {{ gener }}
+    </div>
+{% endfor %} {% endcomment %}
+
+
+
