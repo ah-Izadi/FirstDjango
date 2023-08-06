@@ -66,6 +66,6 @@ def detailEmail(request,to):
     with smtplib.SMTP(host='smtp.gmail.com',port=587) as smtp:
         smtp.ehlo()
         smtp.starttls()
-        smtp.login("amirhossein.izadi.ir@gmail.com","bpugcxjlkpmssyho")
+        smtp.login("your email","your app password")
         smtp.send_message(message)
         return HttpResponse("sending.....")
