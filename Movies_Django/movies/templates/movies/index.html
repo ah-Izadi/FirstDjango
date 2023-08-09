@@ -1,8 +1,12 @@
-{% for Movie in movies %}
+{% for Movie in movies1 %}
     <div class="row">
-        <a href="{{Movie.id}}">  {{ Movie.name}}</a>
+        {% comment %} <a href="{{Movie.id}}">  {{ Movie.name}}</a> {% endcomment %}
+        <a href="{% url 'detail' Movie.id %}">  {{ Movie.name}}</a>
     </div>
 {% endfor %}
+
+
+
 
 {% comment %} {% for gener in geners %}
     <div class='row'>

@@ -11,7 +11,7 @@ def index(request):
     Geners = [genre.id for genre in gener.objects.all()] 
 
     context = {
-        "movies" : titles,
+        "movies1" : titles,
         "geners" : Geners
     }
 
@@ -22,7 +22,6 @@ def detail(request,MovieID):
     film = movie.objects.filter(id= MovieID)
     return HttpResponse(film)
     
-
 
 
 
