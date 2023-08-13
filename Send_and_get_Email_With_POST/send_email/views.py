@@ -23,6 +23,6 @@ def Send(request):
     with smtplib.SMTP(host='smtp.gmail.com',port=587) as smtp:
         smtp.ehlo()
         smtp.starttls()
-        smtp.login("amirhossein.izadi.ir@gmail.com","bpugcxjlkpmssyho")
+        smtp.login("=======","+++++++")
         smtp.send_message(message)
         return HttpResponse('Sending.....')
